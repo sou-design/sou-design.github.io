@@ -98,36 +98,38 @@
 
   <div class="row">
     <div class="col-lg-8">
-      <div class="content-column-content">
-         <h1>Pizza maker</h1>
-         <p>Fifth abundantly made Give sixth hath. Cattle creature i be don&rsquo;t them.</p>
-<h4>Used Algorithms : </h4>
-<p>
-    Color Thresholding: If a green object is detected near the camera, the cursor moves according to the movement of the detected object. For this:
-</p>
-<ol>
-    <li>Threshold the image using an upper and lower bound interval of the green color.</li>
-    <li>Filter the image if necessary.</li>
-    <li>Calculate the contours of the elements in the image and then retrieve the contour with the maximum area.</li>
-    <li>Calculate the moments of the largest contour.</li>
-    <li>Calculate the centroid of the contour from the moments.</li>
-</ol>
+        <div class="content-column-content">
+            <h1>Pizza maker</h1>
+            <img src="https://sou-design.github.io/img/portfolio/pizzamaker.png" alt="" />
+            <h4>Used Algorithms : </h4>
+            <p>
+                <span>Color Thresholding:</span> If a green object is detected near the camera, the cursor moves according to the movement of the detected object. For this:
+            </p>
+            <ol>
+                <li>Threshold the image using an upper and lower bound interval of the green color.</li>
+                <li>Filter the image if necessary.</li>
+                <li>Calculate the contours of the elements in the image and then retrieve the contour with the maximum area.</li>
+                <li>Calculate the moments of the largest contour.</li>
+                <li>Calculate the centroid of the contour from the moments.</li>
+            </ol>
 
-<p>
-    Rectangle Detection using the Canny filter:
-    If a nearby rectangle is detected, ingredients are spawned.
-    For this:
-</p>
+            <p>
+                <span>
+                    Rectangle Detection using the Canny filter:
+                </span>
+                If a nearby rectangle is detected, ingredients are spawned.
+                For this:
+            </p>
 
-<ul>
-    <li>Extract the contours of the image using the Canny algorithm with a threshold of 170 and 200.</li>
-    <li>Traverse the extracted contours, where each contour is approximated to a polygon.</li>
-    <li>Check if the extracted shape corresponds to a rectangle (convexity and number of sides).</li>
-    <li>Check if the extracted shape corresponds to a rectangle (convexity and number of sides).</li>
-    <li>Draw the bounding box.</li>
-</ul>   
-<a href="https://sou-design.github.io/about/">Link to source code</a>
-      </div>
+            <ol>
+                <li>Extract the contours of the image using the Canny algorithm with a threshold of 170 and 200.</li>
+                <li>Traverse the extracted contours, where each contour is approximated to a polygon.</li>
+                <li>Check if the extracted shape corresponds to a rectangle (convexity and number of sides).</li>
+                <li>Check if the extracted shape corresponds to a rectangle (convexity and number of sides).</li>
+                <li>Draw the bounding box.</li>
+            </ol>
+            <a href="https://sou-design.github.io/about/">Link to source code</a>
+        </div>
     </div>
   </div>
 </div>
